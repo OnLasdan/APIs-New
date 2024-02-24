@@ -10,16 +10,16 @@ const apiR = express.Router()
 const __path = process.cwd()
 
 apiR.get('/random-coomer/:username', async (req, res) => {
-  const username = req.params.username;
+  const username = req.params.username
   try {
-    const result = await coomer(username);
+    const result = await coomer(username)
     console.log(result)
     const buffer = await getBuffer(result.path)
     res.type('image/jpeg').send(buffer)
   } catch (error) {
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'Internal Server Error' })
   }
-});
+})
 
 const countries = [
   'random',
