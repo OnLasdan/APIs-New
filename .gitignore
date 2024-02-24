@@ -1,0 +1,11 @@
+.vercel
+node_modules
+.config
+.local
+.upm
+package-lock.json
+yarn.lock
+*.bak
+yarn-error.log
+pnpm-lock.yaml
+cdn_modules

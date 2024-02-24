@@ -1,0 +1,74 @@
+{
+  "dependencies": {
+    "axios": "^1.6.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "chalk": "^5.3.0",
+    "cheerio": "1.0.0-rc.12",
+    "compression": "^1.7.4",
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "file-type": "^19.0.0",
+    "form-data": "^4.0.0",
+    "formdata-node": "^3.7.0",
+    "gpti": "^2.0.4",
+    "helmet": "^7.1.0",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "memorystore": "^1.6.7",
+    "mime-types": "^2.1.35",
+    "moment-timezone": "^0.5.44",
+    "mongoose": "^8.1.0",
+    "morgan": "^1.10.0",
+    "multer": "1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "nodemailer": "^6.9.9",
+    "ora": "^8.0.1",
+    "path": "^0.12.7",
+    "pdfkit": "^0.14.0",
+    "qs": "^6.11.2",
+    "sdwc": "^1.0.1",
+    "serve-favicon": "^2.5.0",
+    "swagger-ui-express": "^5.0.0",
+    "uuid": "^7.0.3",
+    "validator": "^13.11.0",
+    "yt-search": "^2.10.4"
+  },
+  "name": "xyla-rest-api",
+  "version": "1.6.9",
+  "description": "rest api yang terbuat dari kegabutan",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "format": "npx prettier --write .",
+    "prettier-watch": "npx onchange \"**/*\" -- prettier --write --ignore-unknown{{changed}}",
+    "test": "mocha test/test.js",
+    "start": "node index.js",
+    "dev": "NODE_ENV=development nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pkok1024/dollar.git"
+  },
+  "keywords": [
+    "rest-api"
+  ],
+  "author": ".M.U.F.A.R.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pkok1024/dollar/issues"
+  },
+  "homepage": "https://github.com/Pkok1024/dollar#readme",
+  "devDependencies": {
+    "prettier": "3.2.5"
+  }
+}
